@@ -1,50 +1,50 @@
 CREATE TABLE Exam_
 (
-  Exam_No. INT NOT NULL,
-  Subject_Name VARCHAR NOT NULL,
-  Subject_No. INT NOT NULL,
+  Exam_No. INT(10) NOT NULL,
+  Subject_Name VARCHAR(255) NOT NULL,
+  Subject_No. INT(1000) NOT NULL,
   PRIMARY KEY (Exam_No.)
 );
 
 CREATE TABLE Student
 (
-  Student_ID_number INT NOT NULL,
-  Student_Name VARCHAR NOT NULL,
-  Phone_number NUMERIC NOT NULL,
-  Address VARCHAR NOT NULL,
-  Email VARCHAR NOT NULL,
+  Student_ID_number INT(10) NOT NULL,
+  Student_Name VARCHAR(255) NOT NULL,
+  Phone_number NUMERIC(10) NOT NULL,
+  Address VARCHAR(255) NOT NULL,
+  Email VARCHAR(255) NOT NULL,
   PRIMARY KEY (Student_ID_number)
 );
 
 CREATE TABLE Attend
 (
-  Exam_No. INT NOT NULL,
-  Student_ID_number INT NOT NULL,
+  Exam_No. INT(10) NOT NULL,
+  Student_ID_number INT(10) NOT NULL,
   FOREIGN KEY (Exam_No.) REFERENCES Exam_(Exam_No.),
   FOREIGN KEY (Student_ID_number) REFERENCES Student(Student_ID_number)
 );
 
 CREATE TABLE Report_Card
 (
-  Report_No. INT NOT NULL,
-  Score INT NOT NULL,
-  Subject VARCHAR NOT NULL,
-  Student_ID_number INT NOT NULL,
+  Report_No. INT(10) NOT NULL,
+  Score INT(100) NOT NULL,
+  Subject VARCHAR(255) NOT NULL,
+  Student_ID_number INT(10) NOT NULL,
   PRIMARY KEY (Report_No.)
 );
 
 CREATE TABLE Student_card
 (
-  Report_No. INT NOT NULL,
-  Student_ID_number INT NOT NULL,
+  Report_No. INT(10) NOT NULL,
+  Student_ID_number INT(10) NOT NULL,
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.),
   FOREIGN KEY (Student_ID_number) REFERENCES Student(Student_ID_number)
 );
 
 CREATE TABLE Record
 (
-  Exam_No. INT NOT NULL,
-  Report_No. INT NOT NULL,
+  Exam_No. INT(100) NOT NULL,
+  Report_No. INT(10) NOT NULL,
   FOREIGN KEY (Exam_No.) REFERENCES Exam_(Exam_No.),
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.)
 );
