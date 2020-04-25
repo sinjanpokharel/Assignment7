@@ -1,8 +1,8 @@
-CREATE TABLE Exam_
+CREATE TABLE Exam
 (
   Exam_No. INT(10) NOT NULL,
   Subject_Name VARCHAR(255) NOT NULL,
-  Subject_No. INT(1000) NOT NULL,
+  Subject_No. INT(100) NOT NULL,
   PRIMARY KEY (Exam_No.)
 );
 
@@ -20,7 +20,7 @@ CREATE TABLE Attend
 (
   Exam_No. INT(10) NOT NULL,
   Student_ID_number INT(10) NOT NULL,
-  FOREIGN KEY (Exam_No.) REFERENCES Exam_(Exam_No.),
+  FOREIGN KEY (Exam_No.) REFERENCES Exam(Exam_No.),
   FOREIGN KEY (Student_ID_number) REFERENCES Student(Student_ID_number)
 );
 
@@ -45,7 +45,7 @@ CREATE TABLE Record
 (
   Exam_No. INT(100) NOT NULL,
   Report_No. INT(10) NOT NULL,
-  FOREIGN KEY (Exam_No.) REFERENCES Exam_(Exam_No.),
+  FOREIGN KEY (Exam_No.) REFERENCES Exam(Exam_No.),
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.)
 );
 
