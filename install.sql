@@ -27,7 +27,7 @@ CREATE TABLE Attend
 CREATE TABLE Report_Card
 (
   Report_No. INT(10) NOT NULL,
-  Score INT(100) NOT NULL,
+  Score INT(10) NOT NULL,
   Subject VARCHAR(255) NOT NULL,
   Student_ID_number INT(10) NOT NULL,
   PRIMARY KEY (Report_No.)
