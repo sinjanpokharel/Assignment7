@@ -2,7 +2,7 @@ CREATE TABLE Exam
 (
   Exam_No. INT(10) NOT NULL,
   Subject_Name VARCHAR(255) NOT NULL,
-  Subject_No. INT(100) NOT NULL,
+  Subject_No. INT(10) NOT NULL,
   PRIMARY KEY (Exam_No.)
 );
 
@@ -43,13 +43,13 @@ CREATE TABLE Student_card
 
 CREATE TABLE Record
 (
-  Exam_No. INT(100) NOT NULL,
+  Exam_No. INT(10) NOT NULL,
   Report_No. INT(10) NOT NULL,
   FOREIGN KEY (Exam_No.) REFERENCES Exam(Exam_No.),
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.)
 );
 
-insert into Exam_(1, "English",101)
+insert into Exam(1, "English",101)
 insert into Student(1001, "Sinjan Pokharel", 0637811924, "thailand", "sinjanpokharel@gmail.com")
 insert into Attend(1,1001)
 insert into Report_Cards(5432, 85, "English", 1001)
