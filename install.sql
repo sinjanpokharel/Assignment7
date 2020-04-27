@@ -26,11 +26,12 @@ CREATE TABLE Attend
 
 CREATE TABLE Report_Card
 (
+  ID INT(10) NOT NULL
   Report_No. INT(10) NOT NULL,
   Score INT(10) NOT NULL,
   Subject VARCHAR(255) NOT NULL,
   Student_ID_number INT(10) NOT NULL,
-  PRIMARY KEY (Report_No.)
+  PRIMARY KEY (ID)
 );
 
 CREATE TABLE Student_card
@@ -52,6 +53,6 @@ CREATE TABLE Record
 insert into Exam values(1, "English",101);
 insert into Student values(1001, "Sinjan Pokharel", 0637811924, "thailand", "sinjanpokharel@gmail.com");
 insert into Attend values(1,1001);
-insert into Report_Card values(5432, 85, "English", 1001);
+insert into Report_Card values(1, 5432, 85, "English", 1001);
 insert into Student_card values(5432, 1001);
 insert into Record values(1,5432);
