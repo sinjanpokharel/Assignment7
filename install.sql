@@ -49,9 +49,9 @@ CREATE TABLE Record
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.)
 );
 
-insert into Exam(1, "English",101)
-insert into Student(1001, "Sinjan Pokharel", 0637811924, "thailand", "sinjanpokharel@gmail.com")
-insert into Attend(1,1001)
-insert into Report_Cards(5432, 85, "English", 1001)
-insert into Student_Card(5432, 1001)
-insert into record(1,5432)
+insert into Exam(1, "English",101);
+insert into Student(1001, "Sinjan Pokharel", 0637811924, "thailand", "sinjanpokharel@gmail.com");
+insert into Attend(1,1001);
+insert into Report_Card(5432, 85, "English", 1001);
+insert into Student_Card(5432, 1001);
+insert into Record(1,5432);
