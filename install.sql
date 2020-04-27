@@ -8,20 +8,20 @@ CREATE TABLE Exam
 
 CREATE TABLE Student
 (
-  Student_ID_number INT(10) NOT NULL,
+  Student_ID INT(10) NOT NULL,
   Student_Name VARCHAR(255) NOT NULL,
   Phone_number NUMERIC(10) NOT NULL,
   Address VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Student_ID_number)
+  PRIMARY KEY (Student_ID)
 );
 
 CREATE TABLE Attend
 (
   Exam_No. INT(10) NOT NULL,
-  Student_ID_number INT(10) NOT NULL,
+  Student_ID INT(10) NOT NULL,
   FOREIGN KEY (Exam_No.) REFERENCES Exam(Exam_No.),
-  FOREIGN KEY (Student_ID_number) REFERENCES Student(Student_ID_number)
+  FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
 );
 
 CREATE TABLE Report_Card
@@ -30,16 +30,16 @@ CREATE TABLE Report_Card
   Report_No. INT(10) NOT NULL,
   Score INT(10) NOT NULL,
   Subject VARCHAR(255) NOT NULL,
-  Student_ID_number INT(10) NOT NULL,
+  Student_ID INT(10) NOT NULL,
   PRIMARY KEY (ID)
 );
 
 CREATE TABLE Student_card
 (
   Report_No. INT(10) NOT NULL,
-  Student_ID_number INT(10) NOT NULL,
+  Student_ID INT(10) NOT NULL,
   FOREIGN KEY (Report_No.) REFERENCES Report_Card(Report_No.),
-  FOREIGN KEY (Student_ID_number) REFERENCES Student(Student_ID_number)
+  FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
 );
 
 CREATE TABLE Record
