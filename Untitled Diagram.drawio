@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-08T13:48:58.379Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="bpGNxnMVy3XKSHC3q_5s" version="15.0.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-09-08T14:11:33.843Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="KxeINBSde6zIFSNWHa9a" version="15.0.6" type="github" pages="2">
   <diagram id="nXmKqqzhzPZGd1cpE922" name="account screen">
     <mxGraphModel dx="2944" dy="2390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -341,7 +341,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="kE2Mjmj3EXFVyCJvCP2i" name="Page-2">
-    <mxGraphModel dx="946" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1047" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="lCT1Hrnv88SreLpNBZTd-0" />
         <mxCell id="lCT1Hrnv88SreLpNBZTd-1" parent="lCT1Hrnv88SreLpNBZTd-0" />
